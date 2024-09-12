@@ -1,0 +1,290 @@
+@import './1_colors.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
+}
+
+html {
+    background-color: var(--gray5);
+}
+
+@media (min-width: 800px) {
+
+    .navbar {
+        position: fixed;
+        width: 100%;
+        height: 45px;
+        background: var(--background1);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 100;
+    }
+
+    .mainsection {
+        width: 100%;
+        display: flex;
+    }
+
+    .imglogo {
+        height: 40%;
+    }
+
+    .closeMenuHambAll {
+        position: absolute;
+        left: 20px;
+        width: 35px;
+        height: 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        border: none;
+    }
+
+    .closeMenuHambAll div {
+        width: 100%;
+        height: 3px;
+        background-color: var(--marine);
+    }
+
+    .openedeMenuHambAll {
+        position: absolute;
+        left: 20px;
+        width: 35px;
+        height: 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .linehambclose {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: var(--background3);
+    }
+
+    .linehambclose:nth-child(1) {
+        rotate: 45deg;
+        background-color: var(--red);
+    }
+
+    .linehambclose:nth-child(2) {
+        display: none;
+    }
+
+    .linehambclose:nth-child(3) {
+        rotate: -45deg;
+        background-color: var(--red);
+    }
+
+    .mainFrame {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .messageframeall {
+        position: fixed;
+        top: 50px;
+        width: 500px;
+    }
+
+    .messageframe {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 5px;
+    }
+
+    .errormessage {
+        width: 100%;
+        min-height: 35px;
+        background-color: var(--red);
+        color: var(--background1);
+        text-align: center;
+        text-transform: capitalize;
+        flex-wrap: wrap;
+        padding: 5px;
+        border-radius: 8px;
+        font-size: 14px;
+        animation: hideMessage 3s forwards;
+    }
+
+    .message {
+        width: 100%;
+        min-height: 35px;
+        background-color: var(--blue);
+        color: var(--background3);
+        text-align: center;
+        text-transform: capitalize;
+        flex-wrap: wrap;
+        padding: 5px;
+        border-radius: 8px;
+        font-size: 14px;
+        animation: hideMessage 3s forwards;
+    }
+
+    @keyframes hideMessage {
+        0% {
+            opacity: 100%;
+        }
+    
+        95% {
+            opacity: 100%;
+        }
+    
+        100% {
+            opacity: 0%;
+        }
+    }
+
+}
+
+/* mobile */
+@media (max-width: 799px) {
+
+    .navbar {
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        background: var(--background1);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 100;
+    }
+
+    .mainsection {
+        width: 100%;
+        display: flex;
+    }
+
+    .closeMenuHambAll {
+        position: absolute;
+        right: 20px;
+        width: 35px;
+        height: 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .imglogo {
+        height: 30%;
+    }
+
+    .closeMenuHambAll div {
+        width: 100%;
+        height: 3px;
+        background-color: var(--marine);
+    }
+
+    .openedeMenuHambAll {
+        position: absolute;
+        right: 20px;
+        width: 35px;
+        height: 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .linehambclose {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: var(--background3);
+    }
+
+    .linehambclose:nth-child(1) {
+        rotate: 45deg;
+        background-color: var(--red);
+    }
+
+    .linehambclose:nth-child(2) {
+        display: none;
+    }
+
+    .linehambclose:nth-child(3) {
+        rotate: -45deg;
+        background-color: var(--red);
+    }
+
+    .mainFrame {
+        width: 100%;
+        min-height: 100vh;
+    }
+    
+    .messageframeall {
+        position: fixed;
+        top: 66px;
+        width: 90%;
+    }
+
+    .messageframe {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 5px;
+    }
+
+    .errormessage {
+        width: 100%;
+        min-height: 35px;
+        background-color: var(--red);
+        color: var(--background1);
+        text-align: center;
+        text-transform: capitalize;
+        flex-wrap: wrap;
+        padding: 5px;
+        border-radius: 8px;
+        font-size: 14px;
+        animation: hideMessage 3s forwards;
+    }
+
+    .message {
+        width: 100%;
+        min-height: 35px;
+        background-color: var(--blue);
+        color: var(--background3);
+        text-align: center;
+        text-transform: capitalize;
+        flex-wrap: wrap;
+        padding: 5px;
+        border-radius: 8px;
+        font-size: 14px;
+        animation: hideMessage 5s forwards;
+    }
+
+    @keyframes hideMessage {
+        0% {
+            opacity: 100%;
+        }
+    
+        95% {
+            opacity: 100%;
+        }
+    
+        100% {
+            opacity: 0%;
+        }
+    }
+    
+}
