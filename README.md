@@ -3,6 +3,8 @@
 <p align="center">
     </br></br>
     <img src="src/0_utils/3.png">
+    <img src="src/0_utils/2.png">
+    <img src="src/0_utils/1.png">
     </br></br></br>
 </p>
 
